@@ -37,14 +37,10 @@
   "napi": {
     "binaryName": "postrust-npm",
     "targets": [
+      "x86_64-apple-darwin",
       "aarch64-apple-darwin",
-      "x86_64-pc-windows-msvc",
-      "i686-pc-windows-msvc",
-      "aarch64-pc-windows-msvc",
       "x86_64-unknown-linux-gnu",
-      "x86_64-unknown-linux-musl",
-      "aarch64-unknown-linux-gnu",
-      "armv7-unknown-linux-gnueabihf"
+      "aarch64-unknown-linux-gnu"
     ]
   },
   "files": [
@@ -54,10 +50,7 @@
   "optionalDependencies": {
     "postrust-darwin-x64": "1.1.0",
     "postrust-darwin-arm64": "1.1.0",
-    "postrust-darwin-universal": "1.1.0",
     "postrust-linux-x64-gnu": "1.1.0",
-    "postrust-linux-arm64-gnu": "1.1.0",
-    "postrust-win32-x64-msvc": "1.1.0",
-    "postrust-freebsd-x64": "1.1.0"
+    "postrust-linux-arm64-gnu": "1.1.0"
   }
 }
