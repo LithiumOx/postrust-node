@@ -1,6 +1,6 @@
 {
   "name": "postrust",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Ultra-fast Dutch postcode lookup with embedded data",
   "main": "index.js",
   "types": "index.d.ts",
@@ -49,16 +49,17 @@
   },
   "files": [
     "index.js",
-    "index.d.ts"
+    "index.d.ts",
+    "*.node"
   ],
   "optionalDependencies": {
-    "postrust-darwin-arm64": "1.0.1",
-    "postrust-win32-x64-msvc": "1.0.1",
-    "postrust-win32-ia32-msvc": "1.0.1",
-    "postrust-win32-arm64-msvc": "1.0.1",
-    "postrust-linux-x64-gnu": "1.0.1",
-    "postrust-linux-x64-musl": "1.0.1",
-    "postrust-linux-arm64-gnu": "1.0.1",
-    "postrust-linux-arm-gnueabihf": "1.0.1"
+    "postrust-darwin-arm64": "1.0.2",
+    "postrust-win32-x64-msvc": "1.0.2",
+    "postrust-win32-ia32-msvc": "1.0.2",
+    "postrust-win32-arm64-msvc": "1.0.2",
+    "postrust-linux-x64-gnu": "1.0.2",
+    "postrust-linux-x64-musl": "1.0.2",
+    "postrust-linux-arm64-gnu": "1.0.2",
+    "postrust-linux-arm-gnueabihf": "1.0.2"
   }
 }
