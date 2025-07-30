@@ -1,0 +1,66 @@
+{
+  "name": "@postrust/lookup",
+  "version": "1.0.0",
+  "description": "Ultra-fast Dutch postcode lookup with embedded data",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "postcode",
+    "dutch",
+    "lookup",
+    "address",
+    "napi",
+    "rust",
+    "fast"
+  ],
+  "author": {
+    "name": "Mees Dekker",
+    "email": "me@meesdekker.xyz"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lithiumox/postrust-node"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "scripts": {
+    "build": "napi build --platform --release",
+    "build:debug": "napi build --platform",
+    "prepublishOnly": "napi prepublish -t npm",
+    "artifacts": "napi artifacts"
+  },
+  "devDependencies": {
+    "@napi-rs/cli": "^3.0.4"
+  },
+  "napi": {
+    "name": "postrust-npm",
+    "triples": {
+      "additional": [
+        "aarch64-apple-darwin",
+        "x86_64-pc-windows-msvc",
+        "i686-pc-windows-msvc",
+        "aarch64-pc-windows-msvc",
+        "x86_64-unknown-linux-gnu",
+        "x86_64-unknown-linux-musl",
+        "aarch64-unknown-linux-gnu",
+        "armv7-unknown-linux-gnueabihf"
+      ]
+    }
+  },
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "optionalDependencies": {
+    "@postrust/lookup-darwin-arm64": "1.0.0",
+    "@postrust/lookup-win32-x64-msvc": "1.0.0",
+    "@postrust/lookup-win32-ia32-msvc": "1.0.0",
+    "@postrust/lookup-win32-arm64-msvc": "1.0.0",
+    "@postrust/lookup-linux-x64-gnu": "1.0.0",
+    "@postrust/lookup-linux-x64-musl": "1.0.0",
+    "@postrust/lookup-linux-arm64-gnu": "1.0.0",
+    "@postrust/lookup-linux-arm-gnueabihf": "1.0.0"
+  }
+}

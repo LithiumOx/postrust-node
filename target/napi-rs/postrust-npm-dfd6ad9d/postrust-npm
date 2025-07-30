@@ -1,0 +1,5 @@
+{"kind": "interface", "name": "LookupResult", "js_doc": "/** Result structure for postcode lookups */\n", "def": "postcode: string\\nstraat: string\\nhuisnummer: number\\nwoonplaats: string", "original_name": "LookupResult"}
+{"kind": "fn", "name": "init", "js_doc": "/** Initialize the postcode data (called automatically on module load) */\n", "def": "function init(): void"}
+{"kind": "fn", "name": "getInfo", "js_doc": "/** Get information about the loaded data */\n", "def": "function getInfo(): string"}
+{"kind": "fn", "name": "lookup", "js_doc": "/** Lookup a postcode and house number */\n", "def": "function lookup(postcode: string, huisnummer: number): LookupResult | null"}
+{"kind": "fn", "name": "lookupBatch", "js_doc": "/** Lookup multiple postcodes at once (batch operation) */\n", "def": "function lookupBatch(queries: Array<[string, number]>): Array<LookupResult | undefined | null>"}
