@@ -1,6 +1,6 @@
 {
-  "name": "@postrust/lookup",
-  "version": "1.0.0",
+  "name": "postrust",
+  "version": "1.0.1",
   "description": "Ultra-fast Dutch postcode lookup with embedded data",
   "main": "index.js",
   "types": "index.d.ts",
@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LithiumOx/postrust-node.git"
+    "url": "git+https://github.com/LithiumOx/postrust-node.git"
   },
   "engines": {
     "node": ">= 10"
@@ -52,13 +52,13 @@
     "index.d.ts"
   ],
   "optionalDependencies": {
-    "@postrust/lookup-darwin-arm64": "1.0.0",
-    "@postrust/lookup-win32-x64-msvc": "1.0.0",
-    "@postrust/lookup-win32-ia32-msvc": "1.0.0",
-    "@postrust/lookup-win32-arm64-msvc": "1.0.0",
-    "@postrust/lookup-linux-x64-gnu": "1.0.0",
-    "@postrust/lookup-linux-x64-musl": "1.0.0",
-    "@postrust/lookup-linux-arm64-gnu": "1.0.0",
-    "@postrust/lookup-linux-arm-gnueabihf": "1.0.0"
+    "postrust-darwin-arm64": "1.0.1",
+    "postrust-win32-x64-msvc": "1.0.1",
+    "postrust-win32-ia32-msvc": "1.0.1",
+    "postrust-win32-arm64-msvc": "1.0.1",
+    "postrust-linux-x64-gnu": "1.0.1",
+    "postrust-linux-x64-musl": "1.0.1",
+    "postrust-linux-arm64-gnu": "1.0.1",
+    "postrust-linux-arm-gnueabihf": "1.0.1"
   }
 }
