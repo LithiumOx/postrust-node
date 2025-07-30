@@ -1,4 +1,4 @@
-# @postrust/lookup
+# postrust
 
 Ultra-fast Dutch postcode lookup with embedded data. This package provides lightning-fast postcode and address lookups for the Netherlands, with all data embedded directly in the native binary.
 
@@ -14,7 +14,7 @@ Ultra-fast Dutch postcode lookup with embedded data. This package provides light
 ## 📦 Installation
 
 ```bash
-npm install @postrust/lookup
+npm install postrust
 ```
 
 ## 🔧 Usage
@@ -22,7 +22,7 @@ npm install @postrust/lookup
 ### Basic Lookup
 
 ```javascript
-const { lookup } = require('@postrust/lookup');
+const { lookup } = require('postrust');
 
 const result = lookup('1012AB', 1);
 if (result) {
@@ -34,7 +34,7 @@ if (result) {
 ### TypeScript
 
 ```typescript
-import { lookup, LookupResult } from '@postrust/lookup';
+import { lookup, LookupResult } from 'postrust';
 
 const result: LookupResult | null = lookup('1012AB', 1);
 if (result) {
@@ -45,7 +45,7 @@ if (result) {
 ### Batch Lookups
 
 ```javascript
-const { lookupBatch } = require('@postrust/lookup');
+const { lookupBatch } = require('postrust');
 
 const queries = [
   ['1012AB', 1],
@@ -66,7 +66,7 @@ results.forEach((result, i) => {
 ### Package Information
 
 ```javascript
-const { getInfo } = require('@postrust/lookup');
+const { getInfo } = require('postrust');
 
 console.log(getInfo());
 // Output:
