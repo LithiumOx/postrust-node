@@ -20,7 +20,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lithiumox/postrust-node"
+    "url": "https://github.com/LithiumOx/postrust-node.git"
   },
   "engines": {
     "node": ">= 10"
@@ -35,19 +35,17 @@
     "@napi-rs/cli": "^3.0.4"
   },
   "napi": {
-    "name": "postrust-npm",
-    "triples": {
-      "additional": [
-        "aarch64-apple-darwin",
-        "x86_64-pc-windows-msvc",
-        "i686-pc-windows-msvc",
-        "aarch64-pc-windows-msvc",
-        "x86_64-unknown-linux-gnu",
-        "x86_64-unknown-linux-musl",
-        "aarch64-unknown-linux-gnu",
-        "armv7-unknown-linux-gnueabihf"
-      ]
-    }
+    "binaryName": "postrust-npm",
+    "targets": [
+      "aarch64-apple-darwin",
+      "x86_64-pc-windows-msvc",
+      "i686-pc-windows-msvc",
+      "aarch64-pc-windows-msvc",
+      "x86_64-unknown-linux-gnu",
+      "x86_64-unknown-linux-musl",
+      "aarch64-unknown-linux-gnu",
+      "armv7-unknown-linux-gnueabihf"
+    ]
   },
   "files": [
     "index.js",
