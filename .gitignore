@@ -12,7 +12,6 @@ yarn-error.log*
 *.node
 
 # Raw data files (embedded during build)
-postcode_data.br
 
 # OS files
 .DS_Store
