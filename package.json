@@ -50,7 +50,7 @@
   "files": [
     "index.js",
     "index.d.ts"
-  },
+  ],
   "optionalDependencies": {
     "postrust-darwin-x64": "1.1.0",
     "postrust-darwin-arm64": "1.1.0",
